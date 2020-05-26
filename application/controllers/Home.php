@@ -17,7 +17,7 @@ class Home extends Front_controller {
 		$data_array['artikel'] = $this->mdl->get_artikel();
 		$data_array['tentang'] = $this->mdl->get_tentang();
 		$data_array['keunggulan'] = $this->mdl->get_keunggulan();
-		$data_array['program'] = $this->mdl->get_program();
+		$data_array['layanan'] = $this->mdl->get_program();
 
 		$title = "Beranda";
 		$deskripsi = "";

@@ -133,7 +133,7 @@
           </a>
           <ul class="treeview-menu">
 						<li class="<?php echo $subtitle=='profile_web'?'active':''; ?>"><a href="<?php echo site_url('Profil_web'); ?>"><i class="fa fa-circle-o"></i> Profil Web</a></li>
-						<li class="<?php echo $subtitle=='tentang_desa'?'active':''; ?>"><a href="<?php echo site_url('Tentang_web'); ?>"><i class="fa fa-circle-o"></i> Tentang Shomad Build</a></li>
+						<li class="<?php echo $subtitle=='tentang_desa'?'active':''; ?>"><a href="<?php echo site_url('Tentang_web'); ?>"><i class="fa fa-circle-o"></i> Tentang Shomad Clean</a></li>
 						<li class="<?php echo $subtitle=='Program'?'active':''; ?>"><a href="<?php echo site_url('Program'); ?>"><i class="fa fa-circle-o"></i> Keunggulan</a></li>
 						<li class="<?php echo $subtitle=='Program_detail'?'active':''; ?>"><a href="<?php echo site_url('Program_detail'); ?>"><i class="fa fa-circle-o"></i> Layanan</a></li>
 <!-- 						<li class="<?php echo $subtitle=='kurikulum'?'active':''; ?>"><a href="<?php echo site_url('Kurikulum'); ?>"><i class="fa fa-circle-o"></i> Kurikulum</a></li>
