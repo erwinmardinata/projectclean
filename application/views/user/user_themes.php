@@ -88,9 +88,9 @@
 	                            <div class="col-xl-2 col-lg-2 col-md-1">
 	                                <div class="logo">
 	                                    <!-- logo-1 -->
-	                                    <a href="index.html" class="big-logo"><img src="<?php echo base_url(); ?>assets/clean/assets/img/logo/logo.png" alt=""></a>
+	                                    <a href="index.html" class="big-logo"><img src="<?php echo $profil_web->logo; ?>" alt=""></a>
 	                                    <!-- logo-2 -->
-	                                    <a href="index.html" class="small-logo"><img src="<?php echo base_url(); ?>assets/clean/assets/img/logo/loder-logo.png" alt=""></a>
+	                                    <a href="index.html" class="small-logo"><img src="<?php echo $profil_web->favicon; ?>" alt=""></a>
 	                                </div>
 	                            </div>
 	                            <div class="col-xl-8 col-lg-8 col-md-8">
@@ -98,8 +98,8 @@
 	                                <div class="main-menu f-right d-none d-lg-block">
 	                                    <nav>
 	                                        <ul id="navigation">
-	                                            <li><a href="index.html">Home</a></li>
-	                                            <li><a href="about.html">About</a></li>
+	                                            <li><a href="<?php echo site_url(); ?>">Home</a></li>
+	                                            <li><a href="<?php echo site_url('about'); ?>">About</a></li>
 	                                            <li><a href="project.html">Projects</a></li>
 	                                            <li><a href="services.html">Services</a></li>
 	                                            <li><a href="blog.html">Blog</a>

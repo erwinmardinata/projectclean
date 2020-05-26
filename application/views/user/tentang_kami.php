@@ -1,132 +1,169 @@
-<!--================Banner Area =================-->
-<section class="banner_area">
-    <div class="container">
-        <div class="banner_inner_text">
-            <h4>TENTANG KAMI</h4>
-            <div style="color: #FFF">
-              Jujur, Amanah, Bertanggung Jawab adalah Prioritas Kami :)
-            </div>
-        </div>
-    </div>
-</section>
-<!--================End Banner Area =================-->
-
-<!--================Who We Are Area =================-->
-<section class="who_we_are_area">
-    <div class="container">
-        <div class="row who_we_inner">
-            <div class="col-md-6">
-                <div class="who_we_left_content">
-                    <div class="main_w_title">
-                        <h2><?php echo $tentang->judul; ?></h2>
+<!-- slider Area Start-->
+<div class="slider-area ">
+    <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="<?php echo base_url(); ?>assets/clean/assets/img/hero/about.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-cap pt-100">
+                        <h2>About us</h2>
+                        <nav aria-label="breadcrumb ">
+                            <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Product</a></li>
+                            </ol>
+                        </nav>
                     </div>
-                    <p>
-                      <?php echo $tentang->isi; ?>
-                    </p>
-               <!-- <a class="get_bg_btn" href="#">TENTANG KAMI</a>
-                    <div class="border_bar"></div> -->
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="who_we_image">
-                    <img src="<?php echo $tentang->foto; ?>" alt="" style="width: 100%">
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!--================End Who We Are Area =================-->
-
-<!--================Banner Area =================-->
-<section class="banner_area" style="background: url('<?php echo base_url(); ?>assets/build/img/bismillah.jpg') scroll center center;background-size: 100%;">
-    <div class="container">
-        <div class="banner_inner_text">
-          <div class="row">
-            <?php
-              foreach ($unggulan as $row) {
-            ?>
-            <div class="col-md-4">
-              <div>
-                <i class="<?php echo $row->icon; ?> fa-4x" aria-hidden="true" style="color: #fff"></i>
-              </div>
-              <div style="color: #FFF;font-size: 23px;font-weight: 900;padding: 20px;">
-                <?php echo $row->judul; ?>
-              </div>
-              <div style="color: #fff;margin-bottom: 12px;">
-                <?php echo $row->deskripsi; ?>
-              </div>
+</div>
+<!-- slider Area End-->
+<!-- About Area Start -->
+<section class="support-company-area fix pt-10 section-padding30">
+    <div class="support-wrapper align-items-end">
+        <div class="left-content">
+            <!-- section tittle -->
+            <div class="section-tittle section-tittle2 mb-55">
+                <div class="front-text">
+                    <h2 class="">Who we are</h2>
+                </div>
+                <span class="back-text">About us</span>
             </div>
-            <?php
-              }
-            ?>
-          </div>
+            <div class="support-caption">
+                <p class="pera-top">Mollit anim laborum duis au dolor in voluptcate velit ess cillum dolore eu lore dsu quality mollit anim laborumuis au dolor in voluptate velit cillu.</p>
+                <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.</p>
+                <a href="about.html" class="btn red-btn2">read more</a>
+            </div>
+        </div>
+        <div class="right-content">
+            <!-- img -->
+            <div class="right-img">
+                <img src="<?php echo base_url(); ?>assets/clean/assets/img/gallery/safe_in.png" alt="">
+            </div>
+            <div class="support-img-cap text-center">
+                <span>1994</span>
+                <p>Since</p>
+            </div>
         </div>
     </div>
 </section>
-<!--================End Banner Area =================-->
-
-<!--================Our Project Area =================-->
-<section class="our_project_area">
-    <div class="container">
-      <div style="font-size: 35px;text-align: center;font-weight: 700;padding: 20px;">
-        VISI dan MISI
-      </div>
-      <p style="text-align: center;margin-bottom: 23px">
-        Kami selalu ingin berkembang menjadi yang terbaik dan melayani Anda dengan pelayanan yang selalu konsisten
-      </p>
-      <div class="row">
-          <div class="col-md-6">
-            <table class="table table-bordered">
-              <tr style="text-align: center;font-size: 25px;font-weight: 900;background-color: #ffff5a;">
-                <td>
-                  VISI
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 25px;">
-                  <?php echo $visi->isi; ?>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="col-md-6">
-            <table class="table table-bordered">
-              <tr style="text-align: center;font-size: 25px;font-weight: 900;background-color: #ffff5a;">
-                <td>
-                  MISI
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 25px;">
-                  <?php
-                    foreach($misi as $row) {
-                  ?>
-                    <?php echo $row->deskripsi; ?><hr>
-                  <?php
-                    }
-                  ?>
-                </td>
-              </tr>
-            </table>
-          </div>
-      </div>
-    </div>
-</section>
-<!--================End Our Project Area =================-->
-
-<!--================Work Area =================-->
-<section class="work_area">
-    <div class="container">
-        <div class="work_content">
-            <div class="main_c_title">
-                <h2>Bekerja Sama <br class="title_br" />Dengan Kami</h2>
-                <h6>Kami Siap Membantu Menciptakan Impian Anda</h6>
+<!-- About Area End -->
+<!-- Testimonial Start -->
+<div class="testimonial-area t-bg testimonial-padding">
+    <div class="container ">
+        <div class="row">
+            <div class="col-xl-12">
+                <!-- Section Tittle -->
+                <div class="section-tittle section-tittle6 mb-50">
+                    <div class="front-text">
+                        <h2 class="">Testimonial</h2>
+                    </div>
+                    <span class="back-text">Feedback</span>
+                </div>
             </div>
-            <p><strong>Shomad Build : Jasa Renovasi, Arsitek, dan Kontraktor Bangunan | PT Shomad Group | Call : (0371) 1234567 | Jujur dan Amanah.</strong></p>
-            <a class="get_bg_btn" target="_blank" href="https://api.whatsapp.com/send?phone=6287863577415&text=Halo%20KhalifahPropertindo,%20saya%20tertarik%20menggunakan%20jasa%20Anda.%20Bisa%20bantu%20saya?">Whatsapp</a>
-            <a class="get_bg_btn" href="#">Order disini</a>
-            <a class="get_bg_btn" target="_blank" href="tel:0371625058">Telepon</a>
+        </div>
+       <div class="row">
+            <div class="col-xl-10 col-lg-11 col-md-10 offset-xl-1">
+                <div class="h1-testimonial-active">
+                    <!-- Single Testimonial -->
+                    <div class="single-testimonial">
+                         <!-- Testimonial Content -->
+                        <div class="testimonial-caption ">
+                            <div class="testimonial-top-cap">
+                                <!-- SVG icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="86px" height="63px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 95, 19)" fill-opacity="0" fill="rgb(0, 0, 0)"
+                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z"/>
+                                </svg>
+                                <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim. Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjn.</p>
+                            </div>
+                            <!-- founder -->
+                            <div class="testimonial-founder d-flex align-items-center">
+                               <div class="founder-text">
+                                    <span>Jessya Inn</span>
+                                    <p>Co Founder</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Testimonial -->
+                    <div class="single-testimonial">
+                         <!-- Testimonial Content -->
+                        <div class="testimonial-caption ">
+                            <div class="testimonial-top-cap">
+                                <!-- SVG icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="86px" height="63px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 95, 19)" fill-opacity="0" fill="rgb(0, 0, 0)"
+                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z"/>
+                                </svg>
+                                <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim. Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjn.</p>
+                            </div>
+                            <!-- founder -->
+                            <div class="testimonial-founder d-flex align-items-center">
+                               <div class="founder-text">
+                                    <span>Jessya Inn</span>
+                                    <p>Co Founder</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+<!-- Team Start -->
+<div class="team-area section-padding30">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <!-- Section Tittle -->
+                <div class="section-tittle section-tittle5 mb-50">
+                    <div class="front-text">
+                        <h2 class="">Our team</h2>
+                    </div>
+                    <span class="back-text">exparts</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- single Tem -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="<?php echo base_url(); ?>assets/clean/assets/img/team/team1.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <span>UX Designer</span>
+                        <h3>Ethan Welch</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="<?php echo base_url(); ?>assets/clean/assets/img/team/team2.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <span>UX Designer</span>
+                        <h3>Ethan Welch</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="<?php echo base_url(); ?>assets/clean/assets/img/team/team3.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <span>UX Designer</span>
+                        <h3>Ethan Welch</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</section>
-<!--================End Work Area =================-->
+</div>
+<!-- Team End -->
